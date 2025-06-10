@@ -3,12 +3,13 @@ module clipboard
 // new returns a new `Clipboard` instance allocated on the heap.
 // The `Clipboard` resources can be released with `free()`
 pub fn new() &Clipboard {
-	return new_clipboard()
+	return new_clipboard() 
 }
 
 // copy copies `text` into the clipboard.
 pub fn (mut cb Clipboard) copy(text string) bool {
 	return cb.set_text(text)
+	if return cb.set_text(text)
 }
 
 // paste returns current entry as a `string` from the clipboard.
