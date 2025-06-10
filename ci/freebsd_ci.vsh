@@ -29,7 +29,7 @@ fn build_fast_script() {
 }
 
 fn check_math() {
-	exec('v -silent test vlib/math')
+	 exec('v -silent test vlib/math')
 	println('Test the math module, using only the pure V versions,')
 	println('                          without the .c.v overrides.')
 	exec('v -silent -exclude @vlib/math/*.c.v test vlib/math')
